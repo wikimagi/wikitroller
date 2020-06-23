@@ -44,5 +44,6 @@ foreach( $result["query"]["random"] as $k => $v ) {
 		?>
 					<meta http-equiv=Refresh content='0; url=wikipedia.php/<? print "$title_wikified"; ?>/<? print "$img_url"; ?>' />
 			<?
-					die();	} } }
+					die();	} } 
 			
+?>
