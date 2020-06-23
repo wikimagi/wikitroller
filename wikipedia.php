@@ -1,4 +1,3 @@
-
 <?
 $parameters = explode("/", $_SERVER['REQUEST_URI']);
 $current_url = $parameters[1];
@@ -32,7 +31,7 @@ print "<style>";
 		//$img_url = str_replace("_", "/", "$image_addr");
 ?>
 
-<meta http-equiv=Refresh content='5; url=https://bigview.net/Ghub.php/' />
+<meta http-equiv=Refresh content='5; url=https://bigview.net/wikipedia-api.php' />
 
 
 <title><? echo $title_decoded;?></title>
