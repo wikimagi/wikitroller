@@ -1,3 +1,4 @@
+<?
 /*  Access Wikipedia API && Redirect to New URL with operator */
 
 $endPoint = "https://en.wikipedia.org/w/api.php";
