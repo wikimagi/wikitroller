@@ -1,9 +1,9 @@
 # wikitroller
 Running  @ https://bigview.net/
 
-Surf Wikipedia
+Randomly Surf Wikipedia
 
 Requirements:
-Apache Server running PHP
+Apache Web Server running PHP
 php-curl extension
 
