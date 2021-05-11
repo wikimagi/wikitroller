@@ -1,4 +1,4 @@
-<?
+<?php
 /*  Access Wikipedia API && Redirect to New URL with operator */
 
 $endPoint = "https://en.wikipedia.org/w/api.php";
@@ -42,8 +42,8 @@ foreach( $result["query"]["random"] as $k => $v ) {
 					//$img_url_encoded = urlencode("$img_src");
 					$img_url = str_replace("/", "support_wikipedia", "$img_src");
 		?>
-					<meta http-equiv=Refresh content='0; url=wikipedia.php/<? print "$title_wikified"; ?>/<? print "$img_url"; ?>' />
-			<?
+					<meta http-equiv=Refresh content="0; url=../wikipedia.php/<?php print "$title_wikified"; ?>/<?php print "$img_url"; ?>" />
+			<?php
 					die();	} } 
 			
 ?>
