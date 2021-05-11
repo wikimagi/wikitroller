@@ -1,6 +1,7 @@
-<?
+<?php
 $parameters = explode("/", $_SERVER['REQUEST_URI']);
-$current_url = $parameters[1];
+//$current_domain = $parameters[1];
+$current_page = $parameters[1];
 $operator = $parameters[2];
 $image_addr = $parameters[3];
 
@@ -29,16 +30,21 @@ print "<style>";
 		
 		$url = "https://en.wikipedia.org/wiki/$operator";
 		//$img_url = str_replace("_", "/", "$image_addr");
+
+ $return_domain = 'http://'.$_SERVER['HTTP_HOST'];
+
+
+
 ?>
 
-<meta http-equiv=Refresh content='5; url=https://bigview.net/wikipedia-api.php' />
+<meta http-equiv=Refresh content="5; url=<?php echo $return_domain; ?>/wikipedia-api.php"' />
 
 
-<title><? echo $title_decoded;?></title>
+<title><?php echo $title_decoded;?>-<?php echo $return_domain; ?></title>
 </head>
 
-<body style=animation-name:background-roller;background-size:cover;animation-duration:<?php echo $duration;?>s;background-image:url(https://<? echo $img_url;?>); >
+<body style=animation-name:background-roller;background-size:cover;animation-duration:<?php echo $duration;?>s;background-image:url(https://<?php echo $img_url;?>); >
 
-<a style="" href="https://en.wikipedia.org/wiki/<? echo $get_special_chars; ?>">
-<b><? echo $title_decoded; ?></b>
+<a style="position:absolute;bottom:1%;right:1%;color:white;font-size:3em;text-decoration:none;" href="https://en.wikipedia.org/wiki/<?php echo $get_special_chars; ?>">
+<b><?php echo $title_decoded; ?></b>
 </a>
