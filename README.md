@@ -1,5 +1,5 @@
 # wikitroller
-Running  @ https://bigview.net/
+
 
 Randomly Surf Wikipedia
 
