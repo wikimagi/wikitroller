@@ -40,7 +40,7 @@ foreach( $result["query"]["random"] as $k => $v ) {
 		if($img_src){
 					
 					//$img_url_encoded = urlencode("$img_src");
-					$img_url = str_replace("/", "support_wikipedia", "$img_src");
+					$img_url = str_replace("/", "+", "$img_src");
 		?>
 					<meta http-equiv=Refresh content="0; url=../wikipedia.php/<?php print "$title_wikified"; ?>/<?php print "$img_url"; ?>" />
 			<?php
