@@ -9,7 +9,7 @@ $get_special_chars = urldecode("$operator");
 	 	$title_decoded = str_replace("_", " ", "$get_special_chars");
 		
 		//$img_url_encoded = urlencode("$image_addr");
-		  $img_url = str_replace("support_wikipedia", "/", "$image_addr");
+		  $img_url = str_replace("+", "/", "$image_addr");
 		
 /* css animate background  */
 
