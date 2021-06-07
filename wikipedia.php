@@ -44,7 +44,7 @@ print "<style>";
 </head>
 
 <body style=animation-name:background-roller;background-size:cover;animation-duration:<?php echo $duration;?>s;background-image:url(https://<?php echo $img_url;?>); >
-
-<a style="position:absolute;bottom:1%;right:1%;color:white;font-size:3em;text-decoration:none;" href="https://en.wikipedia.org/wiki/<?php echo $get_special_chars; ?>">
+height:100%;width:100%;position:absolute;top:1%;left:1%;color:white;font-size:3em;text-decoration:none;text-shadow: 2px 2px #444;
+<a style="text-shadow: 2px 2px #444;height:100%;width:100%;position:absolute;bottom:1%;right:1%;color:white;font-size:3em;text-decoration:none;" href="https://en.wikipedia.org/wiki/<?php echo $get_special_chars; ?>">
 <b><?php echo $title_decoded; ?></b>
 </a>
