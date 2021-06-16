@@ -41,8 +41,17 @@ foreach( $result["query"]["random"] as $k => $v ) {
 					
 					//$img_url_encoded = urlencode("$img_src");
 					$img_url = str_replace("/", "+", "$img_src");
+
+		$timing_var = $_GET["t"];
+
+
+
 		?>
-					<meta http-equiv=Refresh content="0; url=../?t=5/<?php print "$title_wikified"; ?>/<?php print "$img_url"; ?>" />
+					
+
+
+
+<meta http-equiv=Refresh content="0; url=../?t=<? print $timing_var; ?>/<?php print "$title_wikified"; ?>/<?php print "$img_url"; ?>" />
 			<?php
 					die();	} } 
 			
