@@ -51,7 +51,7 @@ foreach( $result["query"]["random"] as $k => $v ) {
 
 
 
-<meta http-equiv=Refresh content="0; url=../?t=<? print $timing_var; ?>/<?php print "$title_wikified"; ?>/<?php print "$img_url"; ?>" />
+<meta http-equiv=Refresh content="0; url=../?t=<? print $timing_var; ?>&/<?php print "$title_wikified"; ?>/<?php print "$img_url"; ?>" />
 			<?php
 					die();	} } 
 			
