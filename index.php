@@ -10,7 +10,12 @@ $get_special_chars = urldecode("$operator");
 		
 		//$img_url_encoded = urlencode("$image_addr");
 		  $img_url = str_replace("+", "/", "$image_addr");
-		
+	
+
+
+$timing_var = $_GET["t"];
+	if (!$timing_var){
+		$timing_var = "10";	}
 /* css animate background  */
 
 print "<style>";
@@ -37,13 +42,13 @@ print "<style>";
 
 ?>
 
-<meta http-equiv=Refresh content="5; url=<?php echo $return_domain; ?>/operator.php"' />
+<meta http-equiv=Refresh content="<? print $timing_var; ?>; url=<?php echo $return_domain; ?>/operator.php?t=<? print $timing_var; ?>"' />
 
 
 <title><?php echo $title_decoded;?>-<?php echo $return_domain; ?></title>
 </head>
 
-<body style=animation-name:background-roller;background-size:cover;animation-duration:<?php echo $duration;?>s;background-image:url(https://<?php echo $img_url;?>); >
+<body style=margin:0;overflow:hidden;animation-name:background-roller;background-size:cover;animation-duration:<?php echo $duration;?>s;background-image:url(https://<?php echo $img_url;?>); >
 
 <a style="text-shadow: 2px 2px #444;height:100%;width:100%;position:absolute;bottom:1%;right:1%;color:white;font-size:3em;text-decoration:none;" href="https://en.wikipedia.org/wiki/<?php echo $get_special_chars; ?>">
 <b><?php echo $title_decoded; ?></b>
