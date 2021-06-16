@@ -37,7 +37,7 @@ print "<style>";
 
 ?>
 
-<meta http-equiv=Refresh content="5; url=<?php echo $return_domain; ?>/wikipedia-api.php"' />
+<meta http-equiv=Refresh content="5; url=<?php echo $return_domain; ?>/operator.php"' />
 
 
 <title><?php echo $title_decoded;?>-<?php echo $return_domain; ?></title>
